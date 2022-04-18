@@ -1,0 +1,9 @@
+{
+  "javascript.implicitProjectConfig.checkJs": true,
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "checkJs": true,
+    "jsx": "react"
+  },
+  "include": ["src"]
+}

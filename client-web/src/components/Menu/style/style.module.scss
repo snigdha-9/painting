@@ -1,0 +1,29 @@
+.active {
+  background-color: #2d3748;
+  color: #f7fafc;
+  padding: 0.5rem 0.8rem;
+  margin-right: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  text-transform: none;
+  border: 1px solid #2d3748;
+  box-shadow: 0px 0px 1px 1px rgb(119, 111, 111);
+
+  &:focus,
+  :hover {
+    outline: none;
+  }
+}
+
+.noActive {
+  color: #f7fafc;
+  padding: 0.5rem 0.8rem;
+  margin-right: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px;
+}
+.noActive:hover {
+  background-color: #2d3748;
+  box-shadow: 0px 0px 1px 1px rgb(119, 111, 111);
+}

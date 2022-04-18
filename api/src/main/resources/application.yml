@@ -1,0 +1,32 @@
+server:
+  port: 4000
+
+spring:
+  application:
+    name: painting
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/paintingdb?createDatabaseIfNotExist=true
+    username: root
+    password: secret
+    pool-size: 30
+    driverClassName: com.mysql.cj.jdbc.Driver
+    servlet:
+      multipart:
+        enabled: true
+        fileSizeThreshold: 2KB
+        maxFileSize: 1MB
+        maxRequestSize: 2MB
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: 'true'
+        default_schema: public
+    show-sql: 'true'
+  jwt:
+    secret: secret
+    expireIn: 84000
+file:
+  uploadDir: ./uploads
